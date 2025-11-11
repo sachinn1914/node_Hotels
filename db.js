@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-// const mongoURL = "mongodb://localhost:27017/HOTELS"; // url to connect mongodb database to local server//
-const mongoURL = 'mongodb+srv://guglavathsachin6_db_user:qwertyuiop@cluster0.7zkoqhi.mongodb.net/'
+// const mongoURL_LOCAL = "mongodb://localhost:27017/HOTELS"; // url to connect mongodb database to local server//
+const mongoURL = process.env.DB_URL; // url to connect mongodb database to cloud server//
 
 mongoose.connect(mongoURL, {
   useNewUrlParser: true, //useNewUrlParser: true: This option was used to explicitly tell Mongoose to use the new URL string parser for MongoDB connection strings.///
