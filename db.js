@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
-const mongoURL = "mongodb://localhost:27017/HOTELS"; // url to connect mongodb database
+// const mongoURL = "mongodb://localhost:27017/HOTELS"; // url to connect mongodb database to local server//
+const mongoURL = 'mongodb+srv://guglavathsachin6_db_user:qwertyuiop@cluster0.7zkoqhi.mongodb.net/'
 
 mongoose.connect(mongoURL, {
   useNewUrlParser: true, //useNewUrlParser: true: This option was used to explicitly tell Mongoose to use the new URL string parser for MongoDB connection strings.///
